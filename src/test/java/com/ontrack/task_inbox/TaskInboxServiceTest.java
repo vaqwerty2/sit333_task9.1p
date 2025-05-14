@@ -19,7 +19,7 @@ public class TaskInboxServiceTest {
 
         // Assert
         assertNotNull(inbox, "Inbox should not be null");
-        assertEquals(3, inbox.size(), "Intentional fail to trigger CI");
+        assertEquals(2, inbox.size(), "Student 1234 should have 2 tasks in inbox");
 
         assertTrue(inbox.get(0).contains("Submitted"), "First task should indicate submission");
         assertTrue(inbox.get(1).contains("Feedback pending"), "Second task should show feedback status");
